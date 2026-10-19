@@ -64,7 +64,7 @@ CSV file.
 Every piece runs on the developer's machine, and the source code never
 leaves it. The CSV leaves the machine only when the developer shares it.
 
-![The pieces that run on the developer's machine](images/solution.png)
+![The pieces that run on the developer's machine](https://raw.githubusercontent.com/computerwwwizards/quality-tool/main/docs/images/solution.png)
 
 The local numbers match CI only if the local server checks the same rules
 and the same conditions as the CI server. A reference file records the
@@ -74,10 +74,10 @@ applies them to the local server before the analysis.
 ## 7. We published the script with a demo
 
 We published the bridge in a GitHub repository,
-[quality-tool](../README.md). Its script, `quality.sh`, runs the whole
+[quality-tool](https://github.com/computerwwwizards/quality-tool). Its script, `quality.sh`, runs the whole
 analysis in six commands. The repository includes a demo app, and its
 README analyzes that app from start to end in about 10 minutes. The guide
-[Analyze your repository](analyze-your-repo.md) applies the script to your
+[Analyze your repository](https://github.com/computerwwwizards/quality-tool/blob/main/docs/analyze-your-repo.md) applies the script to your
 own repository. It also shows where each value of the reference file is in
 the web interface of your CI server.
 
