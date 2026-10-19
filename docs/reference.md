@@ -15,12 +15,6 @@ maintained tool.
 | `./quality.sh down` | Removes the container. Keeps the volumes, so the analyses stay. |
 | `./quality.sh down --purge` | Also removes the volumes and the network. Deletes every analysis and resets the password to `admin`. Keeps `.quality/` and `reports/`. |
 
-Running a command again with the same arguments gives the same result,
-except that `token` writes a new token each time.
-
-A command exits with status 1 on an error, and with status 2 on a wrong
-command or a wrong number of arguments.
-
 ## Environment variables
 
 | Variable | Default | Use |
