@@ -1,0 +1,26 @@
+{
+  "serverVersion": "9.9.8.100196",
+  "retrieved": "2026-10-19",
+  "gate": {
+    "name": "CI default",
+    "conditions": [
+      { "metric": "new_maintainability_rating", "op": "GT", "error": "1" },
+      { "metric": "new_reliability_rating", "op": "GT", "error": "1" },
+      { "metric": "new_security_hotspots_reviewed", "op": "LT", "error": "100" },
+      { "metric": "new_security_rating", "op": "GT", "error": "1" },
+      { "metric": "new_duplicated_lines_density", "op": "GT", "error": "3" },
+      { "metric": "new_coverage", "op": "LT", "error": "80" },
+      { "metric": "coverage", "op": "LT", "error": "80" },
+      { "metric": "duplicated_blocks", "op": "GT", "error": "5" },
+      { "metric": "sqale_rating", "op": "GT", "error": "1" },
+      { "metric": "reliability_rating", "op": "GT", "error": "1" },
+      { "metric": "security_hotspots_reviewed", "op": "LT", "error": "100" },
+      { "metric": "security_rating", "op": "GT", "error": "1" }
+    ]
+  },
+  "profiles": [
+    { "language": "js", "name": "Sonar way", "activeRules": 219 },
+    { "language": "ts", "name": "Sonar way", "activeRules": 208 },
+    { "language": "css", "name": "Sonar way", "activeRules": 23 }
+  ]
+}

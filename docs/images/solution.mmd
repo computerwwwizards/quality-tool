@@ -1,0 +1,12 @@
+flowchart LR
+	subgraph machine["Developer machine"]
+		repo[("Repository")] --> runner["Test runner"]
+		runner --> lcov[("Coverage report")]
+		repo --> scanner["Scanner"]
+		lcov --> scanner
+		scanner -- "analysis" --> sonar["Quality server"]
+		ref[("Reference file")] -- "profiles and gate" --> sonar
+		sonar -- "metrics" --> script["Export script"]
+		script --> csv[("Metrics CSV")]
+	end
+	csv -- "the developer shares it" --> people["Technical teams and management"]
