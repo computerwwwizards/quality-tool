@@ -14,7 +14,7 @@ quality gate.
 | Understand how the pieces fit and what the numbers mean | [How it works](docs/how-it-works.md) |
 | Analyze your own repository | [Analyze your repository](docs/analyze-your-repo.md) |
 | Look up a command, a variable, or a CSV column | [Reference](docs/reference.md) |
-| Know why this tool exists | [Running a code quality tool locally for a new repository](docs/article-local-quality-analysis.md) |
+| Know why this tool exists | [Running a code quality tool locally for a new repository](https://medium.com/@dryor/running-a-code-quality-tool-locally-for-a-new-repository-350104de89f5) |
 
 ## Before you start
 
