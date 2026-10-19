@@ -1,21 +1,25 @@
 # sonarqube-demo
 
-This repository is a throwaway demo, not a maintained tool. It shows how to
-measure the technical debt of a repository on your own machine. Its
-script, `quality.sh`, runs SonarQube in Docker, analyzes the code and its
-test coverage, and writes the results to a CSV file. The source code never
-leaves the machine.
+This repository is the demo of the article
+[Running a code quality tool locally for a new repository](https://medium.com/@dryor/running-a-code-quality-tool-locally-for-a-new-repository-350104de89f5).
+It is throwaway code, not a maintained tool. It shows one way to run
+SonarQube on your own machine, apply the quality gate and the quality
+profiles of a CI server, and export the metrics to a CSV file. The source
+code never leaves the machine.
 
-In about 10 minutes, you analyze the example app in `examples/vite-app`
-and get a CSV with its technical debt, its coverage, and the result of its
-quality gate.
+The demo script, `quality.sh`, only runs the steps of the article in order.
+It has no releases and no support. If the approach fits your team, take the
+steps and adapt them to your own setup.
+
+In about 10 minutes, you run the demo on the example app in
+`examples/vite-app` and get a CSV with its technical debt, its coverage,
+and the result of its quality gate.
 
 | To | Read |
 |---|---|
 | Understand how the pieces fit and what the numbers mean | [How it works](docs/how-it-works.md) |
-| Analyze your own repository | [Analyze your repository](docs/analyze-your-repo.md) |
-| Look up a command, a variable, or a CSV column | [Reference](docs/reference.md) |
-| Know why this demo exists | [Running a code quality tool locally for a new repository](https://medium.com/@dryor/running-a-code-quality-tool-locally-for-a-new-repository-350104de89f5) |
+| Try the demo on your own repository | [Try the demo on your repository](docs/analyze-your-repo.md) |
+| Look up a command of the demo script, a variable, or a CSV column | [Reference](docs/reference.md) |
 
 ## Before you start
 
@@ -166,5 +170,5 @@ reset the password to `admin`, run `./quality.sh down --purge`.
 
 ## Next
 
-To analyze your own repository, follow
-[Analyze your repository](docs/analyze-your-repo.md).
+To try the demo on your own repository, follow
+[Try the demo on your repository](docs/analyze-your-repo.md).

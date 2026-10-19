@@ -1,5 +1,8 @@
 # Reference
 
+This page describes the demo script, `quality.sh`. It is demo code, not a
+maintained tool.
+
 ## Commands
 
 | Command | What it does |

@@ -78,7 +78,7 @@ We published a demo of the bridge in a GitHub repository,
 script, `quality.sh`, runs the whole analysis in six commands. The
 repository includes an example app, and its README analyzes that app from
 start to end in about 10 minutes. The guide
-[Analyze your repository](https://github.com/computerwwwizards/sonarqube-demo/blob/main/docs/analyze-your-repo.md) applies
+[Try the demo on your repository](https://github.com/computerwwwizards/sonarqube-demo/blob/main/docs/analyze-your-repo.md) applies
 the demo script to your own repository. It also shows where each value of the reference file is in
 the web interface of your CI server.
 

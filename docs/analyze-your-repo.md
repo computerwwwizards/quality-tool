@@ -1,8 +1,9 @@
-# Analyze your repository
+# Try the demo on your repository
 
-Use this guide to analyze your own repository with the demo script,
-`quality.sh`. It
-assumes you did the [tutorial](../README.md) once. To understand what each
+Use this guide to run the demo script, `quality.sh`, on your own
+repository. The script is demo code, not a maintained tool, so adapt it if
+your setup differs. This guide assumes you ran the demo in the
+[README](../README.md) once. To understand what each
 step does, read [How it works](how-it-works.md).
 
 The examples use a repository at `~/code/my-repo` and the project key

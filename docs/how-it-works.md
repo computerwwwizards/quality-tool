@@ -3,7 +3,7 @@
 The demo script, `quality.sh`, runs the same analysis that a CI quality
 step runs, but on your machine. This page explains what each piece does, where your code
 goes, and what the numbers in the CSV mean. To run the demo, follow the
-[tutorial](../README.md).
+[README](../README.md).
 
 ## Five pieces run on your machine
 
@@ -130,7 +130,7 @@ Four settings keep the code on your machine:
 
 ## Each number comes from a fixed formula
 
-The examples use the CSV of the [tutorial](../README.md), where the
+The examples use the CSV of the demo in the [README](../README.md), where the
 example app has 56 lines of code.
 
 ### Technical debt is a sum of fix times
