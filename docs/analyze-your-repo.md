@@ -1,6 +1,7 @@
 # Analyze your repository
 
-Use this guide to analyze your own repository with `quality.sh`. It
+Use this guide to analyze your own repository with the demo script,
+`quality.sh`. It
 assumes you did the [tutorial](../README.md) once. To understand what each
 step does, read [How it works](how-it-works.md).
 
@@ -111,7 +112,7 @@ error after it writes the report. The report is still valid.
 ## 4. Start SonarQube and prepare the project
 
 Set the SonarQube version of the CI server, from step 2. Then run the
-commands from the quality-tool folder:
+commands from the sonarqube-demo folder:
 
 ```bash
 export SONARQUBE_IMAGE=sonarqube:9.9.8-community
@@ -157,7 +158,7 @@ Open `http://127.0.0.1:9000/dashboard?id=my-repo` and check:
 ./quality.sh export my-repo
 ```
 
-The CSV is in `reports/my-repo.csv`, in the quality-tool folder.
+The CSV is in `reports/my-repo.csv`, in the sonarqube-demo folder.
 
 ## Analyze again after a change
 

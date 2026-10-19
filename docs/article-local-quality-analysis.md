@@ -64,21 +64,22 @@ CSV file.
 Every piece runs on the developer's machine, and the source code never
 leaves it. The CSV leaves the machine only when the developer shares it.
 
-![The pieces that run on the developer's machine](https://raw.githubusercontent.com/computerwwwizards/quality-tool/main/docs/images/solution.png)
+![The pieces that run on the developer's machine](https://raw.githubusercontent.com/computerwwwizards/sonarqube-demo/main/docs/images/solution.png)
 
 The local numbers match CI only if the local server checks the same rules
 and the same conditions as the CI server. A reference file records the
 quality gate and the quality profiles of the CI server, and the script
 applies them to the local server before the analysis.
 
-## 7. We published the script with a demo
+## 7. We published a demo
 
-We published the bridge in a GitHub repository,
-[quality-tool](https://github.com/computerwwwizards/quality-tool). Its script, `quality.sh`, runs the whole
-analysis in six commands. The repository includes a demo app, and its
-README analyzes that app from start to end in about 10 minutes. The guide
-[Analyze your repository](https://github.com/computerwwwizards/quality-tool/blob/main/docs/analyze-your-repo.md) applies the script to your
-own repository. It also shows where each value of the reference file is in
+We published a demo of the bridge in a GitHub repository,
+[sonarqube-demo](https://github.com/computerwwwizards/sonarqube-demo). It is throwaway code, not a maintained tool. Its
+script, `quality.sh`, runs the whole analysis in six commands. The
+repository includes an example app, and its README analyzes that app from
+start to end in about 10 minutes. The guide
+[Analyze your repository](https://github.com/computerwwwizards/sonarqube-demo/blob/main/docs/analyze-your-repo.md) applies
+the demo script to your own repository. It also shows where each value of the reference file is in
 the web interface of your CI server.
 
 ## 8. Result
@@ -87,7 +88,7 @@ On a real repository that CI already analyzes, the local run and CI gave
 the same values: 21 minutes of technical debt, 3 code smells, and 1
 security hotspot.
 
-The demo of the quality-tool repository analyzes a Vite app with 56 lines
+The demo analyzes a Vite app with 56 lines
 of code and Vitest tests. It applies the default quality gate and quality
 profiles of a CI server. The app has 20
 minutes of technical debt from two code smells. The quality gate fails
@@ -119,4 +120,4 @@ These are four rows of its CSV:
 - **CI quality step.** The pipeline stage that runs the quality tool automatically on every change.
 - **CI server.** The SonarQube server that CI uses. The reference file records its configuration.
 - **Local server.** The SonarQube container that runs on the developer's machine. The script writes the configuration of the CI server to it.
-- **Reference file.** A JSON file in the quality-tool repository that records the quality profiles and the quality gate of the CI server.
+- **Reference file.** A JSON file in the sonarqube-demo repository that records the quality profiles and the quality gate of the CI server.

@@ -1,8 +1,9 @@
-# quality-tool
+# sonarqube-demo
 
-`quality.sh` measures the technical debt of a repository on your own
-machine. It runs SonarQube in Docker, analyzes the code and its test
-coverage, and writes the results to a CSV file. The source code never
+This repository is a throwaway demo, not a maintained tool. It shows how to
+measure the technical debt of a repository on your own machine. Its
+script, `quality.sh`, runs SonarQube in Docker, analyzes the code and its
+test coverage, and writes the results to a CSV file. The source code never
 leaves the machine.
 
 In about 10 minutes, you analyze the example app in `examples/vite-app`
@@ -14,13 +15,13 @@ quality gate.
 | Understand how the pieces fit and what the numbers mean | [How it works](docs/how-it-works.md) |
 | Analyze your own repository | [Analyze your repository](docs/analyze-your-repo.md) |
 | Look up a command, a variable, or a CSV column | [Reference](docs/reference.md) |
-| Know why this tool exists | [Running a code quality tool locally for a new repository](https://medium.com/@dryor/running-a-code-quality-tool-locally-for-a-new-repository-350104de89f5) |
+| Know why this demo exists | [Running a code quality tool locally for a new repository](https://medium.com/@dryor/running-a-code-quality-tool-locally-for-a-new-repository-350104de89f5) |
 
 ## Before you start
 
 You need:
 
-- Docker Engine. Docker Desktop also runs the tool, but large companies
+- Docker Engine. Docker Desktop also runs the demo, but large companies
   need a paid subscription for it. On macOS, Colima runs Docker Engine.
 - `curl` and `jq`.
 - Node.js 22.12 or later, for the tests of the example app.
@@ -60,7 +61,7 @@ SonarQube now runs in a container that only your machine can reach.
 
 ```text
 created project vite-app
-token written to /…/quality-tool/.quality/vite-app.token
+token written to /…/sonarqube-demo/.quality/vite-app.token
 ```
 
 SonarQube keeps the results of `vite-app` in this project. The token lets
@@ -119,7 +120,7 @@ analysis AaFV… processed
 ```
 
 ```text
-wrote /…/quality-tool/reports/vite-app.csv
+wrote /…/sonarqube-demo/reports/vite-app.csv
 ```
 
 The file has one row for each of 11 metrics. These are four of them:

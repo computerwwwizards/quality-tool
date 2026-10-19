@@ -8,7 +8,7 @@
 | `./quality.sh token <key>` | Creates the project if it does not exist. Revokes the token `quality-<key>` if it exists, and writes a new project analysis token to `.quality/<key>.token` with mode `600`. |
 | `./quality.sh reference <file> <key>` | Applies a reference file to the project. See [Reference file](#reference-file). Fails if the project does not exist. |
 | `./quality.sh scan <repo> <key> [-Dsonar.key=value ...]` | Runs the scanner with the repository mounted read-only and `sonar.host.url` set to the local server. Waits until SonarQube processes the analysis. A failed quality gate is not an error. Fails if `.quality/<key>.token` does not exist, or if an extra argument does not have the form `-Dsonar.key=value`. |
-| `./quality.sh export <key> [file]` | Writes the metrics to `reports/<key>.csv` in the quality-tool folder, or to `file`, relative to the current folder. |
+| `./quality.sh export <key> [file]` | Writes the metrics to `reports/<key>.csv` in the sonarqube-demo folder, or to `file`, relative to the current folder. |
 | `./quality.sh down` | Removes the container. Keeps the volumes, so the analyses stay. |
 | `./quality.sh down --purge` | Also removes the volumes and the network. Deletes every analysis and resets the password to `admin`. Keeps `.quality/` and `reports/`. |
 
@@ -33,7 +33,7 @@ command or a wrong number of arguments.
 
 | Path | Content | In Git |
 |---|---|---|
-| `quality.sh` | The tool. The `METRICS` array at the top lists the exported metrics. | Yes |
+| `quality.sh` | The demo script. The `METRICS` array at the top lists the exported metrics. | Yes |
 | `reference/*.json` | Reference files. | Yes |
 | `test/e2e.sh` | Runs the tutorial from step 1 to step 6 and checks the CSV. | Yes |
 | `docs/images/solution.mmd` | The source of `docs/images/solution.png`. | Yes |

@@ -1,8 +1,8 @@
 # How it works
 
-`quality.sh` runs the same analysis that a CI quality step runs, but on
-your machine. This page explains what each piece does, where your code
-goes, and what the numbers in the CSV mean. To run the tool, follow the
+The demo script, `quality.sh`, runs the same analysis that a CI quality
+step runs, but on your machine. This page explains what each piece does, where your code
+goes, and what the numbers in the CSV mean. To run the demo, follow the
 [tutorial](../README.md).
 
 ## Five pieces run on your machine
@@ -126,7 +126,7 @@ Four settings keep the code on your machine:
   overrides that file.
 - `quality.sh scan` mounts your repository read-only in the scanner
   container. The scanner writes its work files to `.quality/work/<key>/` in
-  the quality-tool folder.
+  the sonarqube-demo folder.
 
 ## Each number comes from a fixed formula
 
